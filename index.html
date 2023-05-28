@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="title icon" type="image/png" href="images/camera-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Image Gallery Project</h1>
+        <nav>
+          <a href="" id="menu-icon"></a> 
+          <ul>
+            <li><a href="#nature">Nature</a></li>
+            <li><a href="#wildlife">Wildlife</a></li>
+            <li><a href="#hikers">Hikers</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <section>
+        <a name="nature"></a>
+        <h2>Nature</h2>
+        <div class="container">
+          <a href="images/nature1.jpeg"><img id = "img1" src="images/nature1.jpeg" alt="nature1" ></a>
+          <a href="images/nature2.jpeg"><img id = "img2" src="images/nature2.jpeg" alt="nature2" ></a>
+          <a href="images/nature3.jpeg"><img id = "img3" src="images/nature3.jpeg" alt="nature3" ></a>
+          <a href="images/nature4.jpeg"><img id = "img4" src="images/nature4.jpeg" alt="nature4" ></a>
+          <a href="images/nature5.jpeg"><img id = "img5" src="images/nature5.jpeg" alt="nature5" ></a>
+          <a href="images/nature6.jpeg"><img id = "img6" src="images/nature6.jpeg" alt="nature6" ></a>
+        </div>
+      </section>
+      <!-- End of Nature Section -->
+      <section>
+          <a name="wildlife"></a>
+          <h2>Wildlife</h2>
+          <div class="container">
+              <a href="images/animal1.jpeg"><img id = "img7" src="images/animal1.jpeg" alt="animal1"></a>
+              <a href="images/animal2.jpeg"><img id = "img8" src="images/animal2.jpeg" alt="animal2"></a>
+              <a href="images/animal3.jpeg"><img id = "img9" src="images/animal3.jpeg" alt="animal3"></a>
+              <a href="images/animal4.jpeg"><img id = "img10" src="images/animal4.jpeg" alt="animal4"></a>
+              <a href="images/animal5.jpeg"><img id = "img11" src="images/animal5.jpeg" alt="animal5"></a>
+              <a href="images/animal6.jpeg"><img id = "img12" src="images/animal6.jpeg" alt="animal6"></a>
+          </div>
+      </section>
+      <!-- End of Wildlife Section -->
+      <section>
+          <a name="hikers"></a>
+          <h2>Hikers</h2>
+          <div class="container">
+              <a href="images/backpacker1.jpeg"><img id = "img13" src="images/backpacker1.jpeg" alt="backpacker1"></a>
+              <a href="images/backpacker2.jpeg"><img id = "img14" src="images/backpacker2.jpeg" alt="backpacker2"></a>
+              <a href="images/backpacker3.jpeg"><img id = "img15" src="images/backpacker3.jpeg" alt="backpacker3"></a>
+              <a href="images/backpacker4.jpeg"><img id = "img16" src="images/backpacker4.jpeg" alt="backpacker4"></a>
+              <a href="images/backpacker5.jpeg"><img id = "img17" src="images/backpacker5.jpeg" alt="backpacker5"></a>
+              <a href="images/backpacker6.jpeg"><img id = "img18" src="images/backpacker6.jpeg" alt="backpacker6"></a>
+          </div>
+      </section>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <!-- End of Hikers Section -->
+      <button onclick="goToTop()" id="topBtn" title="Go to top of page">Top of Page</button>
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2023, Muhammad Safeer Hussain
+        </p>
+      </footer>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img1");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img2");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img3");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img4");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img5");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img6");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img7");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img8");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img9");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img10");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img11");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img12");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img13");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img14");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("img15");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img16");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img17");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("img18");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onmousedown = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      }
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+       modal.style.display = "none";
+    }
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

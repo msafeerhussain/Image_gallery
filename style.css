@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #BF9A54;
+    color: #38401D;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* HEADER SECTION */
+
+.header {
+    overflow: hidden;
+}
+
+header h1 {
+    /* float: left; */
+    font-size: 160%; 
+    display: inline-block;     
+}
+
+/* END HEADER SECTION */
+
+/* NAVIGATION */
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: 600;
+    color: #544333;  
+}
+
+nav ul li a:hover {
+    color: #C0B6A8;
+}
+
+/* END NAVIGATION */
+
+/* SECTIONS */
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+section div.container img {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+section div.container img:hover {
+   opacity: 0.65; 
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* END OF SECTIONS */
+
+/* FOOTER SECTION */
+.footer {
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    font-weight: 700;
+}
+/* END FOOTER SECTION */
+
+/* MEDIA QUERIES/RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+    
+    header h1 {
+        margin-left: 3%;
+    }
+    #menu-icon {
+        width: 30px;
+        height: 26px;
+        background: url(images/menu.png) no-repeat center;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        z-index: 100;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        padding: 3% 7%;
+        background: #C0B6A8;
+        width: 200px;
+        text-align: center;
+        z-index: 10;
+    }
+    nav ul li {
+        width: 90%;
+        padding: 5%;
+        margin: auto;
+    }
+    nav ul li a {
+        padding: 5% 20%;
+    }
+    nav ul li a:hover {
+        border-bottom: 1px solid #aaa;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+    section div.container img {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and
+(max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+    header h1 {
+        margin-left: 3%; 
+    }
+    nav {
+        margin-right: 3%;
+    }
+}
+
+/* Scroll to Top */
+/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: inherit; /* Set a background color */
+    color: inherit; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 3px 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
